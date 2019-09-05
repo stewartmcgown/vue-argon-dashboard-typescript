@@ -1,8 +1,8 @@
 module.exports = {
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/eslint-recommended", "plugin:vue/recommended"],
     "rules": {
-        "no-console": 0,
-        "@typescript-eslint/no-implicit-any": false
+        "no-console": "off",
+        "@typescript-eslint/no-implicit-any": "off"
     },
     "env": {
         "browser": true,
