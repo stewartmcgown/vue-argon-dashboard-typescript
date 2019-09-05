@@ -18,11 +18,13 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'no-console': 'off',
+    'class-methods-use-this': 'off',
     // Disable fomatting rules, let prettier handle the rest
 
     '@typescript-eslint/indent': 'off',
     'vue/html-indent': 'off',
     'vue/max-attributes-per-line': 'off',
     'vue/html-closing-bracket-newline': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
   },
 };

@@ -1,24 +1,30 @@
 import { Line, mixins as mx } from 'vue-chartjs';
-import globalOptionsMixin from "@/components/Charts/globalOptionsMixin";
 import Component, { mixins } from 'vue-class-component';
+import globalOptionsMixin from './globalOptionsMixin';
 
 @Component({
   name: 'line-chart',
-  extends: Line
+  extends: Line,
 })
-export default class LineChart extends mixins(mx.reactiveData, globalOptionsMixin, Line) {
+export default class LineChart extends mixins(
+  mx.reactiveData,
+  globalOptionsMixin,
+  Line,
+) {
   props: {
     extraOptions: {
-      type: Object,
-      default: () => ({})
-    },
-    chartData: any
+      type: Object;
+      default: () => {};
+    };
+    chartData: any;
   };
+
   data() {
     return {
-      ctx: null
+      ctx: null,
     };
   }
+
   mounted() {
     this.$watch(
       'chartData',
@@ -27,7 +33,7 @@ export default class LineChart extends mixins(mx.reactiveData, globalOptionsMixi
           this.renderChart(this.props.chartData, this.props.extraOptions);
         }
       },
-      { immediate: true }
+      { immediate: true },
     );
   }
 }

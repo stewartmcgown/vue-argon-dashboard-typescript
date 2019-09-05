@@ -158,11 +158,12 @@
 </template>
 <script>
   // Charts
-  import * as chartConfigs from '@/components/Charts/config';
-  import LineChart from '@/components/Charts/LineChart';
-  import BarChart from '@/components/Charts/BarChart';
+  import * as chartConfigs from '../components/Charts/config';
+  import LineChart from '../components/Charts/LineChart';
+  import BarChart from '../components/Charts/BarChart';
 
   // Tables
+  // Note: figure out why eslint keeps throwing errors when I leave the file extensions off.
   import SocialTrafficTable from './Dashboard/SocialTrafficTable';
   import PageVisitsTable from './Dashboard/PageVisitsTable';
 
