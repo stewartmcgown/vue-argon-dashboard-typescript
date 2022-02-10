@@ -36,7 +36,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.7.0-dev.20190824",
     "vue-class-component": "^6.3.2",
